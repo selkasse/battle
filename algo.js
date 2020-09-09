@@ -107,7 +107,7 @@ const attack = async function(e){
     }
     else{
         console.log('***********************************');
-        updateScroll();
+        // updateScroll();
     }
 }
 
