@@ -13,6 +13,12 @@
     }
 })();
 
+function updateScroll(){
+    var element = document.getElementById("log");
+    element.scrollTop = element.scrollHeight;
+}
+
+
 let player = {
     name: "player",
     attackPower: 3,
@@ -101,6 +107,7 @@ const attack = async function(e){
     }
     else{
         console.log('***********************************');
+        updateScroll();
     }
 }
 
