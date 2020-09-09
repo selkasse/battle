@@ -1,6 +1,6 @@
 #container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
   justify-content: center;
 }
 
@@ -13,15 +13,17 @@
 }
 #player {
   border: solid 1px blue;
+  width: 100%;
 }
 
 #monster {
   border: solid 1px red;
+  width: 100%;
 }
 
 pre {
   height: auto;
-  max-height: 200px;
+  /* max-height: 200px; */
   overflow: auto;
   background-color: #eeeeee;
   word-break: normal !important;
