@@ -1,0 +1,29 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#player, #player-attack, #monster, #monster-attack {
+    margin: 50px;
+    padding: 50px;
+}
+#player{
+    
+    border: solid 1px blue;
+}
+
+#monster {
+    
+    border: solid 1px red;
+}
+
+pre {
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+    background-color: #eeeeee;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
+}​
