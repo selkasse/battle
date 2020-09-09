@@ -13,10 +13,6 @@
     }
 })();
 
-function updateScroll(){
-    var element = document.getElementById("log");
-    element.scrollTop = element.scrollHeight;
-}
 
 
 let player = {
@@ -117,3 +113,12 @@ const playerAttack = document.getElementById('player-attack');
 playerAttack.addEventListener("click", attack);
 
 displayPlayfield();
+
+const edit = document.getElementById('edit');
+edit.href += 
+    `?playerAttackPower=${player.attackPower}|` + 
+    `playerArmor=${player.armor}|` + 
+    `playerHealth=${player.totalHealth}|` + 
+    `monsterAttackPower=${monster.attackPower}|` + 
+    `monsterArmor=${monster.armor}|` + 
+    `monsterHealth=${monster.totalHealth}|`;

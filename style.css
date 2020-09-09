@@ -1,34 +1,46 @@
 #container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
 #player,
-#player-attack,
+#player-edit,
 #monster,
-#log {
-  margin: 5px;
-  padding: 5px;
-}
-#player {
-  border: solid 1px blue;
-  width: 100%;
+#monster-edit {
+  padding: 15px;
 }
 
-#monster {
+#player-attack {
+  margin-right: 10px;
+}
+#player,
+#player-edit {
+  border: solid 1px blue;
+  width: 100%;
+  margin-right: 10px;
+}
+
+#monster,
+#monster-edit {
   border: solid 1px red;
   width: 100%;
 }
 
+#monster-edit {
+  margin-right: 10px;
+}
+
 pre {
   height: auto;
-  /* max-height: 200px; */
   overflow: auto;
   background-color: #eeeeee;
   word-break: normal !important;
   word-wrap: normal !important;
   white-space: pre !important;
+}
+
+input {
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

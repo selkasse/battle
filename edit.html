@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Values</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="player-edit">
+        player
+        <hr />
+        <label for="player-attack">Attack Power:</label>
+        <input type="number" id="player-attack" name="player-attack" /><br />
+        <label for="player-armor">Armor:</label>
+        <input type="number" id="player-armor" name="player-armor" /><br />
+        <label for="player-health">Health:</label>
+        <input type="number" id="player-health" name="player-health" />
+      </div>
+      <div id="monster-edit">
+        monster
+        <hr />
+        <label for="monster-attack">Attack Power:</label>
+        <input type="number" id="monster-attack" name="monster-attack" /><br />
+        <label for="monster-armor">Armor:</label>
+        <input type="number" id="monster-armor" name="monster-armor" /><br />
+        <label for="monster-health">Health:</label>
+        <input type="number" id="monster-health" name="monster-health" />
+      </div>
+      <button id="save">Save</button>
+    </div>
+    <script src="edit.js"></script>
+  </body>
+</html>
