@@ -1,7 +1,7 @@
 * {
   font-family: "Consolas", monospace;
-  background-color: #242726;
-  color: #d4c5aa;
+  background-color: #494d5f;
+  color: #e5eaf5;
 }
 
 #container {
@@ -18,14 +18,14 @@
 
 #player,
 #player-edit {
-  border: solid 1px #d04b18;
+  border: solid 1px #a0d2eb;
   width: 100%;
   margin-right: 10px;
 }
 
 #monster,
 #monster-edit {
-  border: solid 1px #dfb24a;
+  border: solid 1px #d0bdf4;
   width: 100%;
   margin-right: 10px;
 }
@@ -36,24 +36,25 @@
 
 #player-attack,
 #save {
-  background-color: #d4c5aa;
-  color: #242726;
+  background-color: #494d5f;
+  color: #a0d2eb;
   width: 20%;
 }
 
 pre {
   height: auto;
   overflow: auto;
-  background-color: #d4c5aa;
-  color: #242726;
+  background-color: #e5eaf5;
+  color: #494d5f;
   word-break: normal !important;
   word-wrap: normal !important;
   white-space: pre !important;
 }
 
 input {
-  background-color: #886c5f;
-  color: #d4c5aa;
+  background-color: #d0bdf4;
+  color: #494d5f;
+  font-weight: bold;
   width: 100%;
 }
 

@@ -45,13 +45,13 @@ function displayPlayfield(){
         Attack Power: ${player.attackPower} <br />
         Armor: ${player.armor} <br />
         Health: ${round(player.currentHealth, 0)} / ${player.totalHealth} <br />
-        Stance: ${player.stance}<br /><br /><br />`
+        Stance: ${player.stance}`
     
     monsterDiv.innerHTML = `monster <hr />
         Attack Power: ${monster.attackPower} <br />
         Armor: ${monster.armor} <br />
         Health: ${round(monster.currentHealth, 0)} / ${monster.totalHealth} <br />
-        Stance: ${monster.stance}<br /><br /><br />`
+        Stance: ${monster.stance}`
 }
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -98,13 +98,13 @@ const attack = async function(e){
             attack();
         }
         else{
-            playerDiv.innerHTML += `<br /><p style="color: #dfb24a;">Player defeated monster</p>`
+            playerDiv.innerHTML += `<br /><p style="color: #a0d2eb;">Player defeated monster</p>`
         }
     }
     else{
         if(monster.stance == "attack"){
             if(player.currentHealth <= 0){
-                monsterDiv.innerHTML += `<br /><p style="color: #d04b18;">Monster defeated player</p>`
+                monsterDiv.innerHTML += `<br /><p style="color: #d0bdf4;">Monster defeated player</p>`
 
             }
         }
