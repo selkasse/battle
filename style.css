@@ -97,8 +97,8 @@ input {
   }
 
   pre {
-    /* text-align: left;
-    padding-left: 15px; */
+    text-align: left;
+    /* padding-left: 15px; */
     width: auto;
   }
 }
