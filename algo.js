@@ -113,15 +113,6 @@ playerAttack.addEventListener("click", attack);
 
 displayPlayfield();
 
-const edit = document.getElementById('edit');
-edit.href += 
-    `?playerAttackPower=${player.attackPower}|` + 
-    `playerArmor=${player.armor}|` + 
-    `playerHealth=${player.totalHealth}|` + 
-    `monsterAttackPower=${monster.attackPower}|` + 
-    `monsterArmor=${monster.armor}|` + 
-    `monsterHealth=${monster.totalHealth}|`;
-
 const queryString = location.search.substring(1);
 if(queryString){
     // console.log(queryString);
@@ -147,3 +138,12 @@ if(queryString){
 
     displayPlayfield();
 }
+
+const edit = document.getElementById('edit');
+edit.href +=
+    `?playerAttackPower=${player.attackPower}|` +
+    `playerArmor=${player.armor}|` +
+    `playerHealth=${player.totalHealth}|` +
+    `monsterAttackPower=${monster.attackPower}|` +
+    `monsterArmor=${monster.armor}|` +
+    `monsterHealth=${monster.totalHealth}|`;
