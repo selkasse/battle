@@ -46,5 +46,25 @@ input {
 @media only screen and (max-width: 600px) {
   #container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+  }
+  #save {
+    width: 100%;
+    align-self: center;
+  }
+  #player-attack {
+    width: 100%;
+  }
+
+  #player,
+  #player-edit,
+  #monster-edit {
+    margin-bottom: 15px;
+  }
+
+  #monster {
+    margin-top: 15px;
   }
 }
