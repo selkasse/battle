@@ -11,9 +11,32 @@ let monsterAttack = split[3].split("=")[1];
 let monsterArmor = split[4].split("=")[1];
 let monsterHealth = split[5].split("=")[1];
 
-const playerEdit = document.getElementById('player-edit');
-const monsterEdit = document.getElementById('monster-edit');
+const playerAttackField = document.getElementById('player-attack');
+playerAttackField.value = playerAttack;
 
-console.log(playerAttack, playerArmor, playerHealth);
-console.log(monsterAttack, monsterArmor, monsterHealth);
+const playerArmorField = document.getElementById('player-armor');
+playerArmorField.value = playerArmor;
+
+const playerHealthField = document.getElementById('player-health');
+playerHealthField.value = playerHealth;
+
+const monsterAttackField = document.getElementById('monster-attack');
+monsterAttackField.value = monsterAttack;
+
+const monsterArmorField = document.getElementById('monster-armor');
+monsterArmorField.value = monsterArmor;
+
+const monsterHealthField = document.getElementById('monster-health');
+monsterHealthField.value = monsterHealth;
+
+const saveButton = document.getElementById('save');
+saveButton.addEventListener('click', () => {
+    window.location.href = 
+        `index.html?playerAttackPower=${playerAttackField.value}|` +
+        `playerArmor=${playerArmorField.value}|` +
+        `playerHealth=${playerHealthField.value}|` +
+        `monsterAttackPower=${monsterAttackField.value}|` +
+        `monsterArmor=${monsterArmorField.value}|` +
+        `monsterHealth=${monsterHealthField.value}|`;
+})
 

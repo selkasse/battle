@@ -103,7 +103,6 @@ const attack = async function(e){
     }
     else{
         console.log('***********************************');
-        // updateScroll();
     }
 }
 
@@ -122,3 +121,29 @@ edit.href +=
     `monsterAttackPower=${monster.attackPower}|` + 
     `monsterArmor=${monster.armor}|` + 
     `monsterHealth=${monster.totalHealth}|`;
+
+const queryString = location.search.substring(1);
+if(queryString){
+    // console.log(queryString);
+    const split = queryString.split("|");
+
+    let playerAttack = split[0].split("=")[1];
+    let playerArmor = split[1].split("=")[1];
+    let playerHealth = split[2].split("=")[1];
+
+    let monsterAttack = split[3].split("=")[1];
+    let monsterArmor = split[4].split("=")[1];
+    let monsterHealth = split[5].split("=")[1];
+
+    player.attackPower = playerAttack;
+    player.armor = playerArmor;
+    player.totalHealth = playerHealth;
+    player.currentHealth = playerHealth;
+
+    monster.attackPower = monsterAttack;
+    monster.armor = monsterArmor;
+    monster.totalHealth = monsterHealth;
+    monster.currentHealth = monsterHealth;
+
+    displayPlayfield();
+}
