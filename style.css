@@ -10,9 +10,6 @@
   padding: 15px;
 }
 
-#player-attack {
-  margin-right: 10px;
-}
 #player,
 #player-edit {
   border: solid 1px blue;
@@ -24,6 +21,7 @@
 #monster-edit {
   border: solid 1px red;
   width: 100%;
+  margin-right: 10px;
 }
 
 #monster-edit {
@@ -50,21 +48,16 @@ input {
     justify-content: center;
     margin: 25px;
   }
+  #player-attack,
   #save {
     width: 100%;
     align-self: center;
   }
-  #player-attack {
-    width: 100%;
-  }
 
   #player,
   #player-edit,
+  #monster,
   #monster-edit {
     margin-bottom: 15px;
-  }
-
-  #monster {
-    margin-top: 15px;
   }
 }
