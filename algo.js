@@ -89,7 +89,7 @@ const attack = async function(e){
     defender.currentHealth -= dmg;
     displayPlayfield();
 
-    console.log(`${attacker.name} did ${dmg} damage to ${defender.name} \n\n`)
+    console.log(`${attacker.name} did ${dmg} damage to ${defender.name} \n`)
     // * If the player's turn has ended, switch to monster auto attack
     // * If the monster's turn has ended, switch to player manual attack
     if(player.stance == "attack"){
