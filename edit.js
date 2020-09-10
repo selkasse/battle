@@ -11,7 +11,7 @@ let monsterAttack = split[3].split("=")[1];
 let monsterArmor = split[4].split("=")[1];
 let monsterHealth = split[5].split("=")[1];
 
-const playerAttackField = document.getElementById('player-attack');
+const playerAttackField = document.getElementById('player-attack-field');
 playerAttackField.value = playerAttack;
 
 const playerArmorField = document.getElementById('player-armor');

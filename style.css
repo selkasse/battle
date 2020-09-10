@@ -34,6 +34,12 @@
   margin-right: 10px;
 }
 
+#player-attack,
+#save {
+  background-color: #d4c5aa;
+  color: #242726;
+}
+
 pre {
   height: auto;
   overflow: auto;
@@ -85,10 +91,14 @@ input {
   }
 
   #edit-link {
+    /* width: 90%; */
+    /* margin: 15px 30px 15px 15px; */
     text-align: center;
   }
 
   pre {
+    /* text-align: left;
+    padding-left: 15px; */
     width: auto;
   }
 }
