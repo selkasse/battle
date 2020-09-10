@@ -98,13 +98,13 @@ const attack = async function(e){
             attack();
         }
         else{
-            playerDiv.innerHTML += `<br /><p style="color: green;">Player defeated monster</p>`
+            playerDiv.innerHTML += `<br /><p style="color: #dfb24a;">Player defeated monster</p>`
         }
     }
     else{
         if(monster.stance == "attack"){
             if(player.currentHealth <= 0){
-                monsterDiv.innerHTML += `<br /><p style="color: red;">Monster defeated player</p>`
+                monsterDiv.innerHTML += `<br /><p style="color: #d04b18;">Monster defeated player</p>`
 
             }
         }

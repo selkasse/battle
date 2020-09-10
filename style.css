@@ -1,5 +1,7 @@
 * {
   font-family: "Consolas", monospace;
+  background-color: #242726;
+  color: #d4c5aa;
 }
 
 #container {
@@ -16,14 +18,14 @@
 
 #player,
 #player-edit {
-  border: solid 1px blue;
+  border: solid 1px #d04b18;
   width: 100%;
   margin-right: 10px;
 }
 
 #monster,
 #monster-edit {
-  border: solid 1px red;
+  border: solid 1px #dfb24a;
   width: 100%;
   margin-right: 10px;
 }
@@ -32,16 +34,24 @@
   margin-right: 10px;
 }
 
+#player-attack {
+  background-color: #d4c5aa;
+  color: #242726;
+}
+
 pre {
   height: auto;
   overflow: auto;
-  background-color: #eeeeee;
+  background-color: #d4c5aa;
+  color: #242726;
   word-break: normal !important;
   word-wrap: normal !important;
   white-space: pre !important;
 }
 
 input {
+  background-color: #886c5f;
+  color: #d4c5aa;
   width: 100%;
 }
 
@@ -81,5 +91,9 @@ input {
 
   #edit-link {
     text-align: center;
+  }
+
+  pre {
+    width: auto;
   }
 }
