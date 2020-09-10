@@ -74,7 +74,7 @@ input {
   #save {
     width: 100%;
     height: 35px;
-    align-self: center;
+    /* align-self: center; */
   }
 
   #player,
