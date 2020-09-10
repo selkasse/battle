@@ -45,13 +45,13 @@ function displayPlayfield(){
         Attack Power: ${player.attackPower} <br />
         Armor: ${player.armor} <br />
         Health: ${round(player.currentHealth, 0)} / ${player.totalHealth} <br />
-        Stance: ${player.stance}`
+        Stance: ${player.stance}<br /><br /><br />`
     
     monsterDiv.innerHTML = `monster <hr />
         Attack Power: ${monster.attackPower} <br />
         Armor: ${monster.armor} <br />
         Health: ${round(monster.currentHealth, 0)} / ${monster.totalHealth} <br />
-        Stance: ${monster.stance}`
+        Stance: ${monster.stance}<br /><br /><br />`
 }
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
