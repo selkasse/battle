@@ -102,6 +102,12 @@ const attack = async function(e){
         }
     }
     else{
+        if(monster.stance == "attack"){
+            if(player.currentHealth <= 0){
+                monsterDiv.innerHTML += `<br /><p style="color: red;">Monster defeated player</p>`
+
+            }
+        }
         console.log('***********************************');
     }
 }
