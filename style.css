@@ -72,4 +72,8 @@ input {
     margin-bottom: 15px;
     padding-right: 30px;
   }
+
+  #edit-link {
+    text-align: center;
+  }
 }
