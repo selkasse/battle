@@ -56,9 +56,21 @@ function displayPlayfield(){
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
+function endBattle(){
 
+    const playerAttack = document.getElementById('player-attack');
+
+    const editLink = document.getElementById('edit');
+
+    playerAttack.disabled = true;
+    playerAttack.style.backgroundColor = "gray";
+    playerAttack.innerHTML = "Battle Ended";
+
+    editLink.innerHTML = "New Battle";
+}
 
 const attack = async function(e){
+
     let attacker;
     let defender;
     if(e){
@@ -98,12 +110,14 @@ const attack = async function(e){
             attack();
         }
         else{
+            endBattle();
             playerDiv.innerHTML += `<br /><p style="color: #a0d2eb;">Player defeated monster</p>`
         }
     }
     else{
         if(monster.stance == "attack"){
             if(player.currentHealth <= 0){
+                endBattle();
                 monsterDiv.innerHTML += `<br /><p style="color: #d0bdf4;">Monster defeated player</p>`
 
             }
